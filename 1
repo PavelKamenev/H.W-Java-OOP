@@ -1,0 +1,31 @@
+package sample;
+
+import java.util.Scanner;
+
+public class Main1 {
+	
+public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);	
+	System.out.println("Input price");
+	 int price = sc.nextInt();
+	 	     sc.nextLine();
+	    System.out.println("Input description");
+	    String description1 = sc.nextLine();
+		 System.out.println("Input weight");
+		    int weight = sc.nextInt();
+		Product product1 =  new Product(price, description1, weight);
+
+	    System.out.println(product1);
+
+	    
+	
+	 System.out.println("Input a");
+	 int a = sc.nextInt();
+	 System.out.println("Input b");
+	    int b = sc.nextInt();
+		 System.out.println("Input c");
+		    int c = sc.nextInt();
+	Ttriangle ttriangle1 = new Ttriangle(a, b, c);
+	System.out.println(ttriangle1);
+}
+	}
