@@ -1,0 +1,41 @@
+package sample;
+
+public class Ttriangle {
+ int a;
+ int b; 
+ int c;
+
+public Ttriangle(int a, int b, int c) {
+    super();
+    this.a = a;
+    this.b = b;
+    this.c = c;
+      }
+
+  public Ttriangle() {
+    super();
+  }
+  public double P() {
+	  double p = 0.5*(a+b+c);
+	  return p;
+  }
+  public double  S() {
+	  double s = Math.sqrt(P()*(P()-a)*(P()-b)*(P()-c));
+	  return s;
+  }
+public String toString() {
+	return "Ttriangle [a = " + a + ", b = " + b + ", c = " + c + ", P = " + P() + ", S = " + S() + "]";
+}
+
+
+
+
+
+
+
+
+}
+
+
+
+
