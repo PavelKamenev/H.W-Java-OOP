@@ -1,9 +1,9 @@
 package sample;
 
 public class Ttriangle {
- int a;
- int b; 
- int c;
+private int a;
+private int b; 
+private int c;
 
 public Ttriangle(int a, int b, int c) {
     super();
@@ -15,25 +15,17 @@ public Ttriangle(int a, int b, int c) {
   public Ttriangle() {
     super();
   }
-  public double P() {
+  public double p() {
 	  double p = 0.5*(a+b+c);
 	  return p;
   }
-  public double  S() {
-	  double s = Math.sqrt(P()*(P()-a)*(P()-b)*(P()-c));
+  public double  s() {
+	  double s = Math.sqrt(p()*(p()-a)*(p()-b)*(p()-c));
 	  return s;
   }
 public String toString() {
-	return "Ttriangle [a = " + a + ", b = " + b + ", c = " + c + ", P = " + P() + ", S = " + S() + "]";
+	return "Ttriangle [a = " + a + ", b = " + b + ", c = " + c + ", P = " + p() + ", S = " + s() + "]";
 }
-
-
-
-
-
-
-
-
 }
 
 
